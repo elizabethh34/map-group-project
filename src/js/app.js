@@ -7,9 +7,9 @@ let latitude;
 let longitude;
 
 search.onsubmit = event => { 
+  event.preventDefault();
   input = event.target.querySelector('input');
-  getStore(input.value, longitude, latitude);
-  event.preventDefault(); 
+  getStore(input.value, longitude, latitude); 
   inputValue = '';
 }
 
