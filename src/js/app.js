@@ -10,7 +10,7 @@ search.onsubmit = event => {
   event.preventDefault();
   const input = event.target.querySelector('input');
   getStore(input.value, longitude, latitude); 
-  inputValue = '';
+  input.value = '';
 }
 
 function getGeoLocation() {
